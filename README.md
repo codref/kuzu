@@ -13,8 +13,7 @@ on very large databases and provides a set of retrieval features, such as a full
 - Serializable ACID transactions
 - Wasm (WebAssembly) bindings for fast, secure execution in the browser
 
-Kuzu is being developed by [Kùzu Inc.](https://kuzudb.github.io/) and 
-is available under a permissible license. So try it out and help us make it better! We welcome your feedback and feature requests.
+Kuzu was initially developed by [Kùzu Inc.](https://kuzudb.github.io/). It is available under a permissible license.
 
 ## Docs and Blog
 
@@ -24,12 +23,37 @@ To learn more about Kuzu, see our [Documentation](https://kuzudb.github.io/docs)
 
 Refer to our [Getting Started](https://kuzudb.github.io/docs/get-started/) page for your first example.
 
+## Extensions
+Kuzu has an extension framework that users can dynamically load the functionality you need at runtime.
+We've developed a list of [official extensions](https://kuzudb.github.io/docs/extensions/#available-extensions) that you can use to extend Kuzu's functionality.
+
+Kuzu requires you to install the extension before loading and using it.
+Note that Kuzu no longer provides the official extension server, where you can directly install any official extensions.
+
+If you've upgraded to the latest version v0.11.3, Kuzu has pre-installed four commonly used extensions (`algo`, `fts`, `json`, `vector`) for you.
+You do not need to manually INSTALL these extensions.
+
+For Kuzu version before v0.11.3, or to install extensions that haven't been pre-installed, you'd have to set up a local extension server.
+The instructions of setting up a local extension server can be found below.
+
+### Host your own extension server
+
+The extension server is based on NGINX and is hosted on [GitHub](https://ghcr.io/kuzudb/extension-repo). You can pull the Docker image and run it in your environment:
+
+```bash
+docker pull ghcr.io/kuzudb/extension-repo:latest
+docker run -d -p 8080:80 ghcr.io/kuzudb/extension-repo:latest
+```
+
+In this example, the extension server will be available at `http://localhost:8080`. You can then install extensions from your server by appending the `FROM` clause to the `INSTALL` command:
+
+```cypher
+INSTALL <EXTENSION_NAME> FROM 'http://localhost:8080/';
+```
+
 ## Build from Source
 
 You can build from source using the instructions provided in the [developer guide](https://kuzudb.github.io/docs/developer-guide).
-
-## Contributing
-We welcome contributions to Kuzu. If you are interested in contributing to Kuzu, please read our [Contributing Guide](CONTRIBUTING.md).
 
 ## License
 By contributing to Kuzu, you agree that your contributions will be licensed under the [MIT License](LICENSE).
