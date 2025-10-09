@@ -56,4 +56,4 @@ INSTALL <EXTENSION_NAME> FROM 'http://localhost:8080/';
 You can build from source using the instructions provided in the [developer guide](https://kuzudb.github.io/docs/developer-guide).
 
 ## License
-By contributing to Kuzu, you agree that your contributions will be licensed under the [MIT License](LICENSE).
+Kuzu is licensed under the [MIT License](LICENSE).
