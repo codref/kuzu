@@ -32,8 +32,9 @@ void InstallExtension::setOutputMessage(bool installed, storage::MemoryManager* 
 
 void InstallExtension::executeInternal(ExecutionContext* context) {
     if (context->clientContext->getExtensionManager()->isStaticLinkedExtension(info.name)) {
-        appendMessage(
-            stringFormat("Extension {} is already static linked with kuzu core.", info.name),
+        appendMessage(stringFormat("Extension {} is already statically linked with the kuzu core. "
+                                   "No need to INSTALL.",
+                          info.name),
             context->clientContext->getMemoryManager());
         return;
     }

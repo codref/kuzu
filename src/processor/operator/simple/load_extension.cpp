@@ -18,7 +18,10 @@ void LoadExtension::executeInternal(ExecutionContext* context) {
     auto clientContext = context->clientContext;
     if (ExtensionUtils::isOfficialExtension(path) &&
         clientContext->getExtensionManager()->isStaticLinkedExtension(path)) {
-        appendMessage(stringFormat("Extension {} is already static linked with kuzu core.", path),
+        appendMessage(
+            stringFormat(
+                "Extension {} is already statically linked with the kuzu core. No need to LOAD.",
+                path),
             context->clientContext->getMemoryManager());
         return;
     }
