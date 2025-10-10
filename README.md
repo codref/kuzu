@@ -1,3 +1,21 @@
+> [!NOTE]
+> Kuzu is working on something new!
+> 
+> We are archiving the KuzuDB project here: https://github.com/kuzudb/kuzu/
+> 
+> For those using Kuzu currently, prior Kuzu releases will continue to be usable in the same way without modifications to your code.
+> 
+> If you are also using extensions, moving forward you have two options:
+>   1. we have a new release 0.11.3 that bundles many (but not all) of the extensions, so you can migrate to 0.11.3; or
+>   2. you can follow the [instructions here](http://kuzudb.github.io/docs/extensions/#host-your-own-extension-server) to run a local extension server.
+> 
+> Further, some of our resources are moving from our website to GitHub:
+>   - Docs: http://kuzudb.github.io/docs
+>   - Blog: http://kuzudb.github.io/blog
+> 
+> We thank you for being early users of Kuzu and making Kuzu better over the last few years!
+
+
 # Kuzu
 Kuzu is an embedded graph database built for query speed and scalability. Kuzu is optimized for handling complex analytical workloads 
 on very large databases and provides a set of retrieval features, such as a full text search and vector indices. Our core feature set includes:
@@ -13,7 +31,7 @@ on very large databases and provides a set of retrieval features, such as a full
 - Serializable ACID transactions
 - Wasm (WebAssembly) bindings for fast, secure execution in the browser
 
-Kuzu was initially developed by [Kùzu Inc.](https://kuzudb.github.io/). It is available under a permissible license.
+Kuzu was initially developed by Kùzu Inc. It is available under a permissible license.
 
 ## Docs and Blog
 
@@ -33,7 +51,7 @@ Note that Kuzu no longer provides the official extension server, where you can d
 If you've upgraded to the latest version v0.11.3, Kuzu has pre-installed four commonly used extensions (`algo`, `fts`, `json`, `vector`) for you.
 You do not need to manually INSTALL these extensions.
 
-For Kuzu version before v0.11.3, or to install extensions that haven't been pre-installed, you'd have to set up a local extension server.
+For Kuzu versions before v0.11.3, or to install extensions that haven't been pre-installed, you have to set up a local extension server.
 The instructions of setting up a local extension server can be found below.
 
 ### Host your own extension server
