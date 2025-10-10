@@ -1,18 +1,19 @@
-Kuzu is working on something new!
-
-We are archiving the KuzuDB project here: https://github.com/kuzudb/kuzu/
-
-For those using Kuzu currently, prior Kuzu releases will continue to be usable in the same way without modifications to your code.
-
-If you are also using extensions, moving forward you have two options:
-  1. we have a new release 0.11.3 that bundles many (but not all) of the extensions, so you can migrate to 0.11.3; or
-  2. you can follow the [instructions here](http://kuzudb.github.io/docs/extensions/#host-your-own-extension-server) to run a local extension server.
-
-Further, some of our resources are moving from our website to GitHub:
-  - Docs: http://kuzudb.github.io/docs
-  - Blog: http://kuzudb.github.io/blog
-
-We thank you for being early users of Kuzu and making Kuzu better over the last few years!
+> [!NOTE]
+> Kuzu is working on something new!
+> 
+> We are archiving the KuzuDB project here: https://github.com/kuzudb/kuzu/
+> 
+> For those using Kuzu currently, prior Kuzu releases will continue to be usable in the same way without modifications to your code.
+> 
+> If you are also using extensions, moving forward you have two options:
+>   1. we have a new release 0.11.3 that bundles many (but not all) of the extensions, so you can migrate to 0.11.3; or
+>   2. you can follow the [instructions here](http://kuzudb.github.io/docs/extensions/#host-your-own-extension-server) to run a local extension server.
+> 
+> Further, some of our resources are moving from our website to GitHub:
+>   - Docs: http://kuzudb.github.io/docs
+>   - Blog: http://kuzudb.github.io/blog
+> 
+> We thank you for being early users of Kuzu and making Kuzu better over the last few years!
 
 
 # Kuzu
