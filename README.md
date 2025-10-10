@@ -31,7 +31,7 @@ on very large databases and provides a set of retrieval features, such as a full
 - Serializable ACID transactions
 - Wasm (WebAssembly) bindings for fast, secure execution in the browser
 
-Kuzu was initially developed by [Kùzu Inc.](https://kuzudb.github.io/). It is available under a permissible license.
+Kuzu was initially developed by Kùzu Inc.. It is available under a permissible license.
 
 ## Docs and Blog
 
