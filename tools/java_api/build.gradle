@@ -44,6 +44,7 @@ publishing {
             pom {
                 name = 'kuzu'
                 description = 'Kuzu is working on something new! We have archived the KuzuDB project.'
+                url = 'https://github.com/kuzudb/kuzu'
                 inceptionYear = '2020'
                 properties = [
                         'project.build.sourceEncoding'    : 'UTF-8',
