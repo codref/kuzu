@@ -43,8 +43,7 @@ publishing {
         mavenJava(MavenPublication) {
             pom {
                 name = 'kuzu'
-                description = 'Kuzu is an embedded graph database built for query speed and scalability.'
-                url = 'http://kuzudb.com'
+                description = 'Kuzu is working on something new! We have archived the KuzuDB project.'
                 inceptionYear = '2020'
                 properties = [
                         'project.build.sourceEncoding'    : 'UTF-8',
