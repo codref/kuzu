@@ -31,7 +31,7 @@ on very large databases and provides a set of retrieval features, such as a full
 - Serializable ACID transactions
 - Wasm (WebAssembly) bindings for fast, secure execution in the browser
 
-Kuzu was initially developed by Kùzu Inc.. It is available under a permissible license.
+Kuzu was initially developed by Kùzu Inc. It is available under a permissible license.
 
 ## Docs and Blog
 
@@ -51,7 +51,7 @@ Note that Kuzu no longer provides the official extension server, where you can d
 If you've upgraded to the latest version v0.11.3, Kuzu has pre-installed four commonly used extensions (`algo`, `fts`, `json`, `vector`) for you.
 You do not need to manually INSTALL these extensions.
 
-For Kuzu version before v0.11.3, or to install extensions that haven't been pre-installed, you'd have to set up a local extension server.
+For Kuzu versions before v0.11.3, or to install extensions that haven't been pre-installed, you have to set up a local extension server.
 The instructions of setting up a local extension server can be found below.
 
 ### Host your own extension server
